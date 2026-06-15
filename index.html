@@ -43,24 +43,26 @@
 </head>
 <body class="bg-brand-dark text-slate-300 font-sans">
 
-    <!-- Navigation -->
+        <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-brand-dark/80 backdrop-blur-sm border-b border-slate-800">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold text-white tracking-tighter">Vishal<span class="text-brand-primary">.</span>Singh</a>
+            <a href="#" class="text-xl font-bold text-white tracking-tighter">vishal<span class="text-brand-primary">.</span>singh</a>
             
             <div class="hidden md:flex items-center gap-6">
                 <a href="#about" class="px-3 py-2 hover:text-brand-primary transition-colors text-sm">About</a>
                 <a href="#experience" class="px-3 py-2 hover:text-brand-primary transition-colors text-sm">Experience</a>
-                <a href="#achievements" class="px-3 py-2 hover:text-brand-primary transition-colors text-sm">Achievements</a>
                 <a href="#education" class="px-3 py-2 hover:text-brand-primary transition-colors text-sm">Education</a>
+                <a href="#projects" class="px-3 py-2 hover:text-brand-primary transition-colors text-sm">Projects</a>
+                <a href="#achievements" class="px-3 py-2 hover:text-brand-primary transition-colors text-sm">Achievements</a>
                 
-                <!-- Contact Button - Aligned with the link items -->
+                <!-- Contact Button -->
                 <a href="#contact" class="bg-brand-primary text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-all text-sm">
                     Contact Me
                 </a>
             </div>
         </div>
     </nav>
+
 
 
 
@@ -154,6 +156,53 @@
             </div>
         </div>
     </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Projects</h2>
+            
+            <div class="space-y-8">
+                <!-- Tetris Clone Project -->
+                <div class="bg-brand-card p-8 rounded-xl border border-slate-700 hover:border-brand-primary transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10">
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="md:w-1/4">
+                            <div class="bg-slate-900 rounded-lg p-6 h-full flex items-center justify-center border border-slate-700">
+                                <i class="fas fa-gamepad text-5xl text-brand-primary"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-3/4 space-y-3">
+                            <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                                Tetris Clone 🎮
+                                <span class="bg-brand-primary/20 text-brand-primary text-xs px-2 py-1 rounded-full">C++ & Raylib</span>
+                            </h3>
+                            
+                            <p class="text-slate-300 leading-relaxed">
+                                A fully functional Tetris clone built using C++ and the Raylib game development library. 
+                                Features smooth controls, score tracking, line clearing mechanics, and an intuitive user interface. 
+                                This project demonstrates proficiency in game logic implementation and efficient memory management.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span class="bg-slate-700 text-slate-300 text-xs px-3 py-1 rounded border border-slate-600">C++</span>
+                                <span class="bg-slate-700 text-slate-300 text-xs px-3 py-1 rounded border border-slate-600">Raylib</span>
+                                <span class="bg-slate-700 text-slate-300 text-xs px-3 py-1 rounded border border-slate-600">Game Development</span>
+                                <span class="bg-slate-700 text-slate-300 text-xs px-3 py-1 rounded border border-slate-600">2D Graphics</span>
+                            </div>
+                            
+                            <!-- GitHub Button -->
+                            <a href="https://github.com/TechAtVishal/Tetris" target="_blank" 
+                               class="inline-flex items-center gap-2 bg-brand-primary text-white px-5 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-all hover:shadow-lg hover:shadow-blue-500/25">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Major Achievements -->
     <section id="achievements" class="py-20 bg-brand-dark">
@@ -283,7 +332,7 @@
             </div>
 
             <p class="text-slate-600 text-sm">
-                &copy; 2025 Vishal Singh. All rights reserved.
+                &copy; 2026 Vishal Singh. All rights reserved.
             </p>
             <p class="text-slate-600 text-sm">
                 Made By - Qwen 3.5

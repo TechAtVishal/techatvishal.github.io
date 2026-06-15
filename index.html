@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Singh | Portfolio</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            primary: '#3b82f6',
+                            accent: '#14b8a6',
+                            card: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(to right, #60a5fa, #34d399);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-300 font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-brand-dark/80 backdrop-blur-sm border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-white tracking-tighter">Vishal<span class="text-brand-primary">.</span>Singh</a>
+            
+            <div class="hidden md:flex items-center gap-6">
+                <a href="#about" class="px-3 py-2 hover:text-brand-primary transition-colors text-sm">About</a>
+                <a href="#experience" class="px-3 py-2 hover:text-brand-primary transition-colors text-sm">Experience</a>
+                <a href="#achievements" class="px-3 py-2 hover:text-brand-primary transition-colors text-sm">Achievements</a>
+                <a href="#education" class="px-3 py-2 hover:text-brand-primary transition-colors text-sm">Education</a>
+                
+                <!-- Contact Button - Aligned with the link items -->
+                <a href="#contact" class="bg-brand-primary text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-all text-sm">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
+        <!-- Background decoration -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+            <div class="absolute top-20 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px]"></div>
+            <div class="absolute bottom-0 left-0 w-72 h-72 bg-teal-500/10 rounded-full blur-[100px]"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-brand-accent font-mono mb-4 tracking-widest uppercase text-sm">Computer Science Enthusiast & Physics Student</p>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Building bridges between <br/>
+                <span class="gradient-text">Physics and Code.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
+                Currently pursuing an Integrated M.S. at BIT Mesra. 
+                Competitive programmer, Robotics enthusiast, and former Student Ambassador for GeeksforGeeks.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-brand-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-lg shadow-blue-500/20">Get in Touch</a>
+                <a href="https://linkedin.com/in/vishalsingh1301" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 px-8 py-3 rounded-lg font-semibold transition-all">
+                    <i class="fab fa-linkedin mr-2"></i> LinkedIn Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-900/50">
+        <div class="max-w-4xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-6">Who is Vishal?</h2>
+                <p class="mb-4 leading-relaxed">
+                    I am a student at <strong>Birla Institute of Technology Mesra</strong>, specializing in Physics with a minor in Computer Science. My journey has been defined by a dual passion: understanding the physical world through science and solving complex problems through code.
+                </p>
+                <p class="mb-6 leading-relaxed">
+                    From qualifying for the Indian National Olympiad in Informatics (INOI) multiple times to winning robotics competitions, I strive to be an "All-Rounder" who excels in both theoretical rigor and practical application.
+                </p>
+            </div>
+            <div class="bg-brand-card p-8 rounded-2xl border border-slate-800">
+                <h3 class="text-brand-accent font-mono text-sm mb-4 uppercase">Core Identity</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-green-500"></i> Top 1% Achiever (91%+, Best All Rounder)</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-code text-blue-500"></i> Competitive Programmer</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-robot text-teal-500"></i> Robotics & Model Making Expert</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-users text-yellow-500"></i> Student Leader (VP, Ambassador)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Experience & Leadership</h2>
+            
+            <div class="space-y-8">
+                <!-- Card 1 -->
+                <div class="bg-brand-card p-6 rounded-xl border-l-4 border-brand-primary hover:translate-x-2 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-white">Student Ambassador</h3>
+                        <span class="bg-blue-900 text-blue-300 text-xs px-2 py-1 rounded">2021 - 2023</span>
+                    </div>
+                    <p class="text-sm font-medium text-slate-400">GeeksforGeeks</p>
+                    <p class="mt-3 text-slate-300">Acted as a communication bridge between the student community and GFG, representing their brand on campus.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-brand-card p-6 rounded-xl border-l-4 border-brand-accent hover:translate-x-2 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-white">Vice President</h3>
+                        <span class="bg-teal-900 text-teal-300 text-xs px-2 py-1 rounded">2023 - 2024</span>
+                    </div>
+                    <p class="text-sm font-medium text-slate-400">Hill Top School</p>
+                    <p class="mt-3 text-slate-300">Organized large-scale annual events including Sports Day and the National Level Leadership Challenge, managing a team of over 100 peers.</p>
+                </div>
+
+                 <!-- Card 3 -->
+                 <div class="bg-brand-card p-6 rounded-xl border-l-4 border-yellow-500 hover:translate-x-2 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-white">Question Setter</h3>
+                        <span class="bg-yellow-900/30 text-yellow-300 text-xs px-2 py-1 rounded">2023 - 2025</span>
+                    </div>
+                    <p class="text-sm font-medium text-slate-400">Hill Top School</p>
+                    <p class="mt-3 text-slate-300">Formulated complex questions for Intra & Inter-school Coding Competitions, assessing students' analytical thinking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Major Achievements -->
+    <section id="achievements" class="py-20 bg-brand-dark">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Key Achievements</h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- INOI & Coding -->
+                <div class="bg-brand-card p-6 rounded-xl border border-slate-800">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fas fa-laptop-code text-blue-400 text-2xl"></i>
+                        <h3 class="text-xl font-bold text-white">Competitive Programming</h3>
+                    </div>
+                    <ul class="space-y-3 text-slate-300">
+                        <li><strong class="text-white">INOI Qualified:</strong> Made it to the National Olympiad 3 times (2023, 2024, 2025).</li>
+                        <li><strong class="text-white">Academic Excellence:</strong> Highest aggregate in Computer Science at Grade 11 & 12. Scored A+ (10/10) in Programming (Sem 1).</li>
+                        <li><strong class="text-white">Hackathon Winner:</strong> Code Day Hackathon - City Winner (Gamedev category, 2025).</li>
+                    </ul>
+                </div>
+
+                <!-- Innovation & Robotics -->
+                <div class="bg-brand-card p-6 rounded-xl border border-slate-800">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fas fa-rocket text-teal-400 text-2xl"></i>
+                        <h3 class="text-xl font-bold text-white">Innovation & Robotics</h3>
+                    </div>
+                    <ul class="space-y-3 text-slate-300">
+                        <li><strong class="text-white">IRC National Finalist (2024):</strong> Led a team to the finals held in Hyderabad for the Interschool Robotics Competition.</li>
+                        <li><strong class="text-white">Teenovations Winner:</strong> Won 1st Prize at CMS Lucknow in model making.</li>
+                        <li><strong class="text-white">BIT Nishan (2025):</strong> Qualified for the next round and received a grant of Rs. 10k to prototype an idea.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Education</h2>
+            
+            <div class="space-y-8">
+                <!-- Current Undergraduate -->
+                <div class="bg-brand-card p-6 rounded-xl border border-slate-800">
+                    <div class="flex flex-col md:flex-row md:items-start gap-4 mb-4">
+                        <div class="md:w-1/3">
+                            <h3 class="text-xl font-bold text-white">Integrated Master of Science</h3>
+                            <p class="text-slate-400">Birla Institute of Technology Mesra</p>
+                            <span class="bg-brand-accent/20 text-teal-300 text-xs px-2 py-1 rounded mt-2 inline-block w-fit">
+                                2025 - 2030 (Expected)
+                            </span>
+                        </div>
+                        <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-700 pt-4 md:pt-0 md:pl-4">
+                            <p class="text-white font-medium mb-2">Physics (Minor in Computer Science)</p>
+                            <ul class="space-y-1 text-sm text-slate-300">
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-star text-yellow-400"></i> Scored <strong>A+ (10/10)</strong> in Programming Subject - 1st Semester
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- High School -->
+                <div class="bg-brand-card p-6 rounded-xl border border-slate-800">
+                    <div class="flex flex-col md:flex-row md:items-start gap-4 mb-4">
+                        <div class="md:w-1/3">
+                            <h3 class="text-xl font-bold text-white">High School</h3>
+                            <p class="text-slate-400">Hill Top School</p>
+                            <span class="bg-slate-700 text-slate-300 text-xs px-2 py-1 rounded mt-2 inline-block w-fit">
+                                9th - 12th Grade
+                            </span>
+                        </div>
+                        <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-700 pt-4 md:pt-0 md:pl-4">
+                            <ul class="space-y-1 text-sm text-slate-300">
+                                <li><strong>12th Grade:</strong> 91.0% Aggregate</li>
+                                <li><strong>10th Grade:</strong> 95.6% Aggregate</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Programs & Affiliations -->
+                <div class="bg-brand-card p-6 rounded-xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-white mb-4">Academic Programs & Affiliations</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-university text-brand-primary mt-1"></i>
+                            <div>
+                                <p class="text-white font-medium">IEEE Student Branch</p>
+                                <p class="text-slate-400 text-sm">Member (2026 - Present)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-user-graduate text-brand-primary mt-1"></i>
+                            <div>
+                                <p class="text-white font-medium">Young Change Makers Programme</p>
+                                <p class="text-slate-400 text-sm">IIM Ranchi (2023)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="py-12 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Let's Connect</h2>
+            <p class="text-slate-400 mb-8 max-w-xl mx-auto">
+                I am currently open to summer internship opportunities, hackathons, and academic collaborations.
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-6 mb-12">
+                <a href="mailto:vishalsingh130105@gmail.com" class="inline-flex items-center justify-center w-full md:w-auto bg-brand-primary text-white px-6 py-4 rounded-lg font-bold hover:bg-blue-600 transition-all">
+                    <i class="far fa-envelope mr-2"></i> vishalsingh130105@gmail.com
+                </a>
+                
+                <a href="tel:+919693670419" class="inline-flex items-center justify-center w-full md:w-auto bg-slate-800 text-white px-6 py-4 rounded-lg font-bold hover:bg-slate-700 transition-all">
+                    <i class="fas fa-phone-alt mr-2"></i> +91 9693670419
+                </a>
+
+                <a href="https://linkedin.com/in/vishalsingh1301" target="_blank" class="inline-flex items-center justify-center w-full md:w-auto bg-slate-800 text-white px-6 py-4 rounded-lg font-bold hover:bg-slate-700 transition-all">
+                    <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                </a>
+            </div>
+
+            <p class="text-slate-600 text-sm">
+                &copy; 2025 Vishal Singh. All rights reserved.
+            </p>
+            <p class="text-slate-600 text-sm">
+                Made By - Qwen 3.5
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
